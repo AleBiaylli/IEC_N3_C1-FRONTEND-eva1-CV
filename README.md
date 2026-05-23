@@ -24,9 +24,9 @@ El repositorio se organiza de la siguiente manera:
 ## Botón Funcional en el CV que dirige al repositorio
 
 
-# Formulario de Registro con Validaciones (Bootstrap 5 & JavaScript)
+## Formulario de Registro con Validaciones (Bootstrap 5 & JavaScript)
 
-Un módulo de formulario web diseñado con **Bootstrap 5** y programado con **JavaScript nativo (Vanilla JS)**. El sistema captura información de registro y aplica un sistema de validación estricto en tiempo real (al cambiar de campo) y al momento de enviar los datos.
+Un módulo de formulario web diseñado con **Bootstrap 5** y programado con **JavaScript**. El sistema captura información de registro y aplica un sistema de validación estricto en tiempo real (al cambiar de campo) y al momento de enviar los datos.
 
 ## Características y Campos del Formulario
 
@@ -48,7 +48,7 @@ El formulario recopila los siguientes datos, aplicando estilos visuales dinámic
 * **Bootstrap** - Diseño responsivo, grillas (`row` y `col`) y componentes de validación visual (`invalid-feedback`).
 * **JavaScript** - Lógica de control de eventos (`onchange`), cálculo de fechas y expresiones regulares.
 
-## Estructura del Proyecto
+## Estructura
 
 ```text
 ├── eval_2.html        # Estructura del formulario y maquetación Bootstrap
