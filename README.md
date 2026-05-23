@@ -45,8 +45,8 @@ El formulario recopila los siguientes datos, aplicando estilos visuales dinámic
 ## Tecnologías Utilizadas
 
 * **HTML5** - Estructura semántica del formulario.
-* **Bootstrap 5.3.8** - Diseño responsivo, grillas (`row` y `col`) y componentes de validación visual (`invalid-feedback`).
-* **JavaScript (ES6)** - Lógica de control de eventos (`onchange`), cálculo de fechas y expresiones regulares.
+* **Bootstrap** - Diseño responsivo, grillas (`row` y `col`) y componentes de validación visual (`invalid-feedback`).
+* **JavaScript** - Lógica de control de eventos (`onchange`), cálculo de fechas y expresiones regulares.
 
 ## Estructura del Proyecto
 
