@@ -14,7 +14,7 @@ function elementoValido(idCampo) {
         return;
     }
 
-    // 1. VALIDACIÓN DEL RUT
+    // VALIDACIÓN DEL RUT
     if (idCampo == 'rut') {
         let valorRut = valor.toUpperCase();
         let regexRut = /^\d{7,8}[0-9K]$/;
@@ -27,7 +27,7 @@ function elementoValido(idCampo) {
             campo.classList.add('is-valid');
         }
     } 
-    // 2. VALIDACIÓN DEL EMAIL
+    // VALIDACIÓN DEL EMAIL
     else if (idCampo == 'email') {
         let regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (regexEmail.test(valor) == false) {
@@ -38,7 +38,7 @@ function elementoValido(idCampo) {
             campo.classList.add('is-valid');
         }
     }
-    // 3. VALIDACIÓN DE LA FECHA DE NACIMIENTO (RESTRICCIÓN: MAYORÍA DE EDAD)
+    // VALIDACIÓN DE LA FECHA DE NACIMIENTO (RESTRICCIÓN: MAYORÍA DE EDAD)
     else if (idCampo == 'fecha_nac') {
         let fechaNacimiento = new Date(valor + "T00:00:00");
         let hoy = new Date();
@@ -58,7 +58,7 @@ function elementoValido(idCampo) {
             campo.classList.add('is-valid');
         }
     }
-    // 4. VALIDACIÓN DE AÑOS DE CARRERA
+    // VALIDACIÓN DE AÑOS DE CARRERA
     else if (idCampo == 'anios_carrera') {
         if (isNaN(valor) || parseInt(valor) < 0) {
             campo.classList.remove('is-valid');
@@ -68,7 +68,7 @@ function elementoValido(idCampo) {
             campo.classList.add('is-valid');
         }
     }
-    // 5. VALIDACIÓN DEL CURRÍCULUM (SOPORTA PDF Y DOCX)
+    // VALIDACIÓN DEL CURRÍCULUM (SOPORTA PDF Y DOCX)
     else if (idCampo == 'curriculum') {
         let nombreArchivo = valor.toLowerCase();
         // Comprobamos si termina con .pdf O termina con .docx
@@ -80,7 +80,7 @@ function elementoValido(idCampo) {
             campo.classList.add('is-invalid'); // Rojo si es otro formato
         }
     }
-    // 6. VALIDACIÓN DE LA CONTRASEÑA
+    // VALIDACIÓN DE LA CONTRASEÑA
     else if (idCampo == 'password') {
         let regexPass = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*(),.?":{}|<>_\-+=])[A-Za-z\d!@#$%^&*(),.?":{}|<>_\-+=]{8,12}$/;
         if (regexPass.test(valor) == false) {
@@ -91,7 +91,7 @@ function elementoValido(idCampo) {
             campo.classList.add('is-valid');
         }
     }
-    // 7. VALIDACIÓN DE REPETIR CONTRASEÑA
+    // VALIDACIÓN DE REPETIR CONTRASEÑA
     else if (idCampo == 'repetir_password') {
         let valorPassword = document.getElementById('password').value;
         if (valor !== valorPassword) {
@@ -113,7 +113,7 @@ function elementoValido(idCampo) {
 function validarFormulario() {
     let esValido = true;
 
-    // 1. Validar Nombre
+    // Validar Nombre
     let campoNombre = document.getElementById('nombre');
     if (campoNombre.value.trim() == '') {
         campoNombre.classList.remove('is-valid');
@@ -124,7 +124,7 @@ function validarFormulario() {
         campoNombre.classList.add('is-valid');
     }
 
-    // 2. Validar Rut
+    // Validar Rut
     let campoRut = document.getElementById('rut');
     let valorRut = campoRut.value.trim().toUpperCase();
     let regexRut = /^\d{7,8}[0-9K]$/;
@@ -138,7 +138,7 @@ function validarFormulario() {
         campoRut.classList.add('is-valid');
     }
 
-    // 3. Validar Fecha de Nacimiento
+    // Validar Fecha de Nacimiento
     let campoFecha = document.getElementById('fecha_nac');
     let valorFecha = campoFecha.value.trim();
     if (valorFecha !== '') {
@@ -163,7 +163,7 @@ function validarFormulario() {
         campoFecha.classList.remove('is-invalid', 'is-valid');
     }
 
-    // 4. Validar Años de carrera
+    // Validar Años de carrera
     let campoAnios = document.getElementById('anios_carrera');
     let valorAnios = campoAnios.value.trim();
     if (valorAnios !== '') {
@@ -179,7 +179,7 @@ function validarFormulario() {
         campoAnios.classList.remove('is-invalid', 'is-valid');
     }
 
-    // 5. Validar Currículum (Soporta PDF y DOCX si se adjunta algo)
+    // Validar Currículum (Soporta PDF y DOCX si se adjunta algo)
     let campoCV = document.getElementById('curriculum');
     let valorCV = campoCV.value.trim();
     if (valorCV !== '') {
@@ -196,7 +196,7 @@ function validarFormulario() {
         campoCV.classList.remove('is-invalid', 'is-valid');
     }
 
-    // 6. Validar Email
+    // Validar Email
     let campoEmail = document.getElementById('email');
     let valorEmail = campoEmail.value.trim();
     let regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -209,7 +209,7 @@ function validarFormulario() {
         campoEmail.classList.add('is-valid');
     }
 
-    // 7. Validar Contraseña
+    // Validar Contraseña
     let campoPassword = document.getElementById('password');
     let valorPassword = campoPassword.value;
     let regexPass = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*(),.?":{}|<>_\-+=])[A-Za-z\d!@#$%^&*(),.?":{}|<>_\-+=]{8,12}$/;
@@ -222,7 +222,7 @@ function validarFormulario() {
         campoPassword.classList.add('is-valid');
     }
 
-    // 8. Validar Repetir Contraseña
+    // Validar Repetir Contraseña
     let campoRepetir = document.getElementById('repetir_password');
     let valorRepetir = campoRepetir.value;
     if (valorRepetir == '' || valorPassword !== valorRepetir) {
