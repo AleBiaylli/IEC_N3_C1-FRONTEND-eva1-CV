@@ -50,7 +50,7 @@ El formulario recopila los siguientes datos, aplicando estilos visuales dinámic
 
 ## Integración página general API DataTable
 
-Este proyecto consiste en una página web general que consume datos asíncronos desde la API pública **JSONPlaceholder**, renderizándolos dinámicamente mediante el plugin **DataTables**.
+Esto consiste en una página web general que consume datos asíncronos desde la API pública **JSONPlaceholder**, renderizándolos dinámicamente mediante el plugin **DataTables**.
 
 ## Características y Correcciones Aplicadas
 
