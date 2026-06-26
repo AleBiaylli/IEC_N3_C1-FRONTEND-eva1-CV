@@ -48,15 +48,7 @@ El formulario recopila los siguientes datos, aplicando estilos visuales dinámic
 * **Bootstrap** - Diseño responsivo, grillas (`row` y `col`) y componentes de validación visual (`invalid-feedback`).
 * **JavaScript** - Lógica de control de eventos (`onchange`), cálculo de fechas y expresiones regulares.
 
-## Estructura
-
-``text
-├── eval_2.html        # Estructura del formulario y maquetación Bootstrap
-├── js/
-│   └── eval_2.js      # Scripts de validación y lógica del Módulo 11
-└── css/
-    └── form.css       # Estilos personalizados adicionales
-
+Este proyecto consiste en una página web general que consume datos asíncronos desde la API pública **JSONPlaceholder**, renderizándolos dinámicamente mediante el plugin **DataTables**.
 
 ## Características y Correcciones Aplicadas
 
@@ -74,7 +66,17 @@ El formulario recopila los siguientes datos, aplicando estilos visuales dinámic
 * **DataTables v2.3.8:** Renderizado dinámico de cuadrículas de datos, paginación y búsqueda integrada.
 * **JSONPlaceholder API:** Fuente de datos remota para Usuarios, Posts, Comentarios y Todos.
 
-## Estructura
+
+# Estructura Formulario
+
+```text
+├── eval_2.html        # Estructura del formulario y maquetación Bootstrap
+├── js/
+│   └── eval_2.js      # Scripts de validación y lógica del Módulo 11
+└── css/
+    └── form.css       # Estilos personalizados adicionales
+
+## Estructura Página general API DataTables
 
 ```text
 ├── css/
