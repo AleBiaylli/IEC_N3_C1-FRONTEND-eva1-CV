@@ -50,17 +50,13 @@ El formulario recopila los siguientes datos, aplicando estilos visuales dinámic
 
 ## Estructura
 
-```text
+``text
 ├── eval_2.html        # Estructura del formulario y maquetación Bootstrap
 ├── js/
 │   └── eval_2.js      # Scripts de validación y lógica del Módulo 11
 └── css/
     └── form.css       # Estilos personalizados adicionales
 
-
-# Página general API con DataTables Dinámico
-
-Este proyecto consiste en una página web estructurada que consume datos asíncronos desde la API pública **JSONPlaceholder**, renderizándolos dinámicamente mediante el plugin **DataTables**.
 
 ## Características y Correcciones Aplicadas
 
@@ -89,4 +85,3 @@ Este proyecto consiste en una página web estructurada que consume datos asíncr
 │   ├── dt_language.js      # Objeto de traducción al español para DataTables
 │   └── tablitas.js         # Lógica principal de la aplicación y llamadas AJAX
 ├── tablitas.html           # Vista principal de la aplicación
-└── README.md               # Documentación del proyecto
