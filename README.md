@@ -54,7 +54,7 @@ Este proyecto consiste en una página web general que consume datos asíncronos 
 
 * **Carga Inicial Automatizada:** Al ingresar, la página ejecuta automáticamente la consulta e inicializa la tabla de usuarios sin necesidad de una acción previa del usuario.
 * **Control de Instancias de DataTables:** Se implementó un diccionario de control (`tablasInstanciadas`) para registrar las tablas ya creadas. Esto evita el error crítico de reinicialización de DataTables en la consola del navegador al alternar entre las opciones del menú desplegable.
-* **Paginación Personalizada:** * En la tabla **Usuarios** (que solo cuenta con 10 registros), se limitó el menú de visualización (`lengthMenu`) para ofrecer únicamente las opciones de **5 y 10 registros**, se hizo esto ya que solo existían 10 usuarios.
+* **Paginación Personalizada:** * En la tabla **Usuarios** (que solo cuenta con 10 registros), se limitó el menú de visualización (`lengthMenu`) para ofrecer únicamente las opciones de **5 y 10 registros**.
   * En las tablas extensas (Publicaciones, Comentarios, Tareas), se mantienen las opciones estándar de paginado.
 * **Internacionalización:** Archivo de traducción completa de la interfaz de DataTables al español (estaba agregado desde antes).
 
