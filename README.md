@@ -48,6 +48,8 @@ El formulario recopila los siguientes datos, aplicando estilos visuales dinámic
 * **Bootstrap** - Diseño responsivo, grillas (`row` y `col`) y componentes de validación visual (`invalid-feedback`).
 * **JavaScript** - Lógica de control de eventos (`onchange`), cálculo de fechas y expresiones regulares.
 
+## Integración página general API DataTable
+
 Este proyecto consiste en una página web general que consume datos asíncronos desde la API pública **JSONPlaceholder**, renderizándolos dinámicamente mediante el plugin **DataTables**.
 
 ## Características y Correcciones Aplicadas
