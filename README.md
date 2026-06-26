@@ -70,6 +70,8 @@ Este proyecto consiste en una página web general que consume datos asíncronos 
 # Estructura Formulario
 
 ```text
+# Estructura Formulario
+
 ├── eval_2.html        # Estructura del formulario y maquetación Bootstrap
 ├── js/
 │   └── eval_2.js      # Scripts de validación y lógica del Módulo 11
