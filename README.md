@@ -56,3 +56,37 @@ El formulario recopila los siguientes datos, aplicando estilos visuales dinámic
 │   └── eval_2.js      # Scripts de validación y lógica del Módulo 11
 └── css/
     └── form.css       # Estilos personalizados adicionales
+
+
+# Página general API con DataTables Dinámico
+
+Este proyecto consiste en una página web estructurada que consume datos asíncronos desde la API pública **JSONPlaceholder**, renderizándolos dinámicamente mediante el plugin **DataTables**.
+
+## Características y Correcciones Aplicadas
+
+* **Carga Inicial Automatizada:** Al ingresar, la página ejecuta automáticamente la consulta e inicializa la tabla de usuarios sin necesidad de una acción previa del usuario.
+* **Control de Instancias de DataTables:** Se implementó un diccionario de control (`tablasInstanciadas`) para registrar las tablas ya creadas. Esto evita el error crítico de reinicialización de DataTables en la consola del navegador al alternar entre las opciones del menú desplegable.
+* **Paginación Personalizada:** * En la tabla **Usuarios** (que solo cuenta con 10 registros), se limitó el menú de visualización (`lengthMenu`) para ofrecer únicamente las opciones de **5 y 10 registros**, se hizo esto ya que solo existían 10 usuarios.
+  * En las tablas extensas (Publicaciones, Comentarios, Tareas), se mantienen las opciones estándar de paginado.
+* **Internacionalización:** Archivo de traducción completa de la interfaz de DataTables al español (estaba agregado desde antes).
+
+## Tecnologías Utilizadas
+
+* **HTML5 & CSS3** (Estilos personalizados y estructura semántica).
+* **Bootstrap 5 (Tema Flatly):** Para la barra de navegación, contenedores y diseño responsivo.
+* **jQuery v4.0.0:** Manipulación del DOM y gestión de eventos.
+* **DataTables v2.3.8:** Renderizado dinámico de cuadrículas de datos, paginación y búsqueda integrada.
+* **JSONPlaceholder API:** Fuente de datos remota para Usuarios, Posts, Comentarios y Todos.
+
+## Estructura
+
+```text
+├── css/
+│   ├── flatly.css          # Tema Bootstrap
+│   └── form.css            # Estilos personalizados del formulario
+├── js/
+│   ├── jQuery v4.0.0.js    # Librería jQuery
+│   ├── dt_language.js      # Objeto de traducción al español para DataTables
+│   └── tablitas.js         # Lógica principal de la aplicación y llamadas AJAX
+├── tablitas.html           # Vista principal de la aplicación
+└── README.md               # Documentación del proyecto
