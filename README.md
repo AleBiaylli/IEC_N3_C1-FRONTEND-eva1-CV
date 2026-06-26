@@ -67,7 +67,6 @@ Este proyecto consiste en una página web general que consume datos asíncronos 
 * **JSONPlaceholder API:** Fuente de datos remota para Usuarios, Posts, Comentarios y Todos.
 
 
-# Estructura Formulario
 
 ```text
 # Estructura Formulario
