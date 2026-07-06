@@ -68,7 +68,7 @@ Esto consiste en una página web general que consume datos asíncronos desde la 
 * **DataTables v2.3.8:** Renderizado dinámico de cuadrículas de datos, paginación y búsqueda integrada.
 * **JSONPlaceholder API:** Fuente de datos remota para Usuarios, Posts, Comentarios y Todos.
 
-
+Nota: El archivo "index" está vacio debido a mismo error de interpretación humana.
 
 ```text
 # Estructura Formulario
